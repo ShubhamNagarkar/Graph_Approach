@@ -1,0 +1,14 @@
+index,job_id
+0,create_dir_casa_nowcast-wf-20190325051700_0_condorpool
+1,NowcastToWDSS2_ID0000001
+2,merge_mrtV2_PID2_ID4
+3,stage_out_local_condorpool_0_0
+4,merge_merged_netcdf2png_PID2_ID2
+5,merge_merged_netcdf2png_PID2_ID1
+6,merge_merged_netcdf2png_PID2_ID4
+7,merge_mrtV2_PID2_ID1
+8,merge_merged_netcdf2png_PID2_ID3
+9,merge_mrtV2_PID2_ID2
+10,merge_mrtV2_PID2_ID3
+11,stage_out_local_condorpool_1_0
+12,cleanup_casa_nowcast-wf-20190325051700_0_condorpool

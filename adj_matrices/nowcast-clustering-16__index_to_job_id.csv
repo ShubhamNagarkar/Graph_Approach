@@ -1,0 +1,10 @@
+index,job_id
+0,create_dir_casa_nowcast-wf-20190325050000_0_condorpool
+1,NowcastToWDSS2_ID0000001
+2,stage_out_local_condorpool_0_0
+3,merge_merged_netcdf2png_PID2_ID2
+4,merge_merged_netcdf2png_PID2_ID1
+5,merge_mrtV2_PID2_ID1
+6,merge_mrtV2_PID2_ID2
+7,stage_out_local_condorpool_1_0
+8,cleanup_casa_nowcast-wf-20190325050000_0_condorpool

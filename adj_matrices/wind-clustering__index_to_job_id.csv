@@ -1,0 +1,8 @@
+index,job_id
+0,create_dir_casa_wind_wf-20200817T053529Z_0_condorpool
+1,merge_gunzip_PID1_ID2
+2,merge_gunzip_PID1_ID1
+3,merge_gunzip_PID1_ID3
+4,merge_casa_job
+5,stage_out_local_condorpool_1_0
+6,cleanup_casa_wind_wf-20200817T053529Z_0_condorpool
