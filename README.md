@@ -5,11 +5,15 @@
 
    This file contains code that reads the yaml files and creates a numpy adjacency matrix along with a csv of index to job id mapping
   
-   Outputs: index_to_job_id.csv, 1000_genome_adjacency_matrix.npy
+
+2. get_dag.py and get_dag_casa.py
+
+   These files contain codes to generate a dictionary containing all the jobs and their information.
    
+3. dag_json
+
+   This folder contains all the output dictionaries (json files) from get_dag.py and get_dag_casa.py.
    
-2. casa_graph_generator.py
-   
-   This file contains code that reads the dag files and creates graphviz graphs of workflows and produces parent children CSVS.
-   
-   Outputs: nowcast_mapping.csv, wind_mapping.csv
+4. adj_matrices
+
+   This folder contains all the adjacency matrices outputted by adjacency_matrix.py
