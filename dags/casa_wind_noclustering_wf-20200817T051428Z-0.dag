@@ -1,0 +1,216 @@
+######################################################################
+# PEGASUS WMS GENERATED DAG FILE
+# DAG casa_wind_wf-20200817T051428Z
+# Index = 0, Count = 1
+######################################################################
+MAXJOBS cleanup 4
+MAXJOBS registration 1
+MAXJOBS stageout 10
+MAXJOBS stagein 10
+
+JOB create_dir_casa_wind_wf-20200817T051428Z_0_condorpool 00/00/create_dir_casa_wind_wf-20200817T051428Z_0_condorpool.sub
+SCRIPT POST create_dir_casa_wind_wf-20200817T051428Z_0_condorpool /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/create_dir_casa_wind_wf-20200817T051428Z_0_condorpool.out
+PRIORITY create_dir_casa_wind_wf-20200817T051428Z_0_condorpool 800
+RETRY create_dir_casa_wind_wf-20200817T051428Z_0_condorpool 1
+VARS create_dir_casa_wind_wf-20200817T051428Z_0_condorpool +DAGNodeRetry="$(RETRY)"
+
+JOB gunzip_ID0000009 00/00/gunzip_ID0000009.sub
+SCRIPT POST gunzip_ID0000009 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/gunzip_ID0000009.out
+PRIORITY gunzip_ID0000009 10
+RETRY gunzip_ID0000009 1
+VARS gunzip_ID0000009 +DAGNodeRetry="$(RETRY)"
+
+JOB gunzip_ID0000011 00/00/gunzip_ID0000011.sub
+SCRIPT POST gunzip_ID0000011 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/gunzip_ID0000011.out
+PRIORITY gunzip_ID0000011 10
+RETRY gunzip_ID0000011 1
+VARS gunzip_ID0000011 +DAGNodeRetry="$(RETRY)"
+
+JOB gunzip_ID0000010 00/00/gunzip_ID0000010.sub
+SCRIPT POST gunzip_ID0000010 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/gunzip_ID0000010.out
+PRIORITY gunzip_ID0000010 10
+RETRY gunzip_ID0000010 1
+VARS gunzip_ID0000010 +DAGNodeRetry="$(RETRY)"
+
+JOB gunzip_ID0000004 00/00/gunzip_ID0000004.sub
+SCRIPT POST gunzip_ID0000004 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/gunzip_ID0000004.out
+PRIORITY gunzip_ID0000004 10
+RETRY gunzip_ID0000004 1
+VARS gunzip_ID0000004 +DAGNodeRetry="$(RETRY)"
+
+JOB gunzip_ID0000015 00/00/gunzip_ID0000015.sub
+SCRIPT POST gunzip_ID0000015 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/gunzip_ID0000015.out
+PRIORITY gunzip_ID0000015 10
+RETRY gunzip_ID0000015 1
+VARS gunzip_ID0000015 +DAGNodeRetry="$(RETRY)"
+
+JOB gunzip_ID0000003 00/00/gunzip_ID0000003.sub
+SCRIPT POST gunzip_ID0000003 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/gunzip_ID0000003.out
+PRIORITY gunzip_ID0000003 10
+RETRY gunzip_ID0000003 1
+VARS gunzip_ID0000003 +DAGNodeRetry="$(RETRY)"
+
+JOB gunzip_ID0000014 00/00/gunzip_ID0000014.sub
+SCRIPT POST gunzip_ID0000014 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/gunzip_ID0000014.out
+PRIORITY gunzip_ID0000014 10
+RETRY gunzip_ID0000014 1
+VARS gunzip_ID0000014 +DAGNodeRetry="$(RETRY)"
+
+JOB gunzip_ID0000002 00/00/gunzip_ID0000002.sub
+SCRIPT POST gunzip_ID0000002 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/gunzip_ID0000002.out
+PRIORITY gunzip_ID0000002 10
+RETRY gunzip_ID0000002 1
+VARS gunzip_ID0000002 +DAGNodeRetry="$(RETRY)"
+
+JOB gunzip_ID0000013 00/00/gunzip_ID0000013.sub
+SCRIPT POST gunzip_ID0000013 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/gunzip_ID0000013.out
+PRIORITY gunzip_ID0000013 10
+RETRY gunzip_ID0000013 1
+VARS gunzip_ID0000013 +DAGNodeRetry="$(RETRY)"
+
+JOB gunzip_ID0000001 00/00/gunzip_ID0000001.sub
+SCRIPT POST gunzip_ID0000001 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/gunzip_ID0000001.out
+PRIORITY gunzip_ID0000001 10
+RETRY gunzip_ID0000001 1
+VARS gunzip_ID0000001 +DAGNodeRetry="$(RETRY)"
+
+JOB gunzip_ID0000012 00/00/gunzip_ID0000012.sub
+SCRIPT POST gunzip_ID0000012 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/gunzip_ID0000012.out
+PRIORITY gunzip_ID0000012 10
+RETRY gunzip_ID0000012 1
+VARS gunzip_ID0000012 +DAGNodeRetry="$(RETRY)"
+
+JOB gunzip_ID0000008 00/00/gunzip_ID0000008.sub
+SCRIPT POST gunzip_ID0000008 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/gunzip_ID0000008.out
+PRIORITY gunzip_ID0000008 10
+RETRY gunzip_ID0000008 1
+VARS gunzip_ID0000008 +DAGNodeRetry="$(RETRY)"
+
+JOB gunzip_ID0000007 00/00/gunzip_ID0000007.sub
+SCRIPT POST gunzip_ID0000007 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/gunzip_ID0000007.out
+PRIORITY gunzip_ID0000007 10
+RETRY gunzip_ID0000007 1
+VARS gunzip_ID0000007 +DAGNodeRetry="$(RETRY)"
+
+JOB gunzip_ID0000006 00/00/gunzip_ID0000006.sub
+SCRIPT POST gunzip_ID0000006 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/gunzip_ID0000006.out
+PRIORITY gunzip_ID0000006 10
+RETRY gunzip_ID0000006 1
+VARS gunzip_ID0000006 +DAGNodeRetry="$(RETRY)"
+
+JOB gunzip_ID0000017 00/00/gunzip_ID0000017.sub
+SCRIPT POST gunzip_ID0000017 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/gunzip_ID0000017.out
+PRIORITY gunzip_ID0000017 10
+RETRY gunzip_ID0000017 1
+VARS gunzip_ID0000017 +DAGNodeRetry="$(RETRY)"
+
+JOB gunzip_ID0000005 00/00/gunzip_ID0000005.sub
+SCRIPT POST gunzip_ID0000005 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/gunzip_ID0000005.out
+PRIORITY gunzip_ID0000005 10
+RETRY gunzip_ID0000005 1
+VARS gunzip_ID0000005 +DAGNodeRetry="$(RETRY)"
+
+JOB gunzip_ID0000016 00/00/gunzip_ID0000016.sub
+SCRIPT POST gunzip_ID0000016 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/gunzip_ID0000016.out
+PRIORITY gunzip_ID0000016 10
+RETRY gunzip_ID0000016 1
+VARS gunzip_ID0000016 +DAGNodeRetry="$(RETRY)"
+
+JOB um_vel_ID0000018 00/00/um_vel_ID0000018.sub
+SCRIPT POST um_vel_ID0000018 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/um_vel_ID0000018.out
+PRIORITY um_vel_ID0000018 20
+RETRY um_vel_ID0000018 1
+VARS um_vel_ID0000018 +DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_condorpool_1_0 00/00/stage_out_local_condorpool_1_0.sub
+SCRIPT POST stage_out_local_condorpool_1_0 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/stage_out_local_condorpool_1_0.out
+PRIORITY stage_out_local_condorpool_1_0 900
+RETRY stage_out_local_condorpool_1_0 1
+CATEGORY stage_out_local_condorpool_1_0 stageout
+VARS stage_out_local_condorpool_1_0 +DAGNodeRetry="$(RETRY)"
+
+JOB merged_netcdf2png_ID0000019 00/00/merged_netcdf2png_ID0000019.sub
+SCRIPT POST merged_netcdf2png_ID0000019 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/merged_netcdf2png_ID0000019.out
+PRIORITY merged_netcdf2png_ID0000019 30
+RETRY merged_netcdf2png_ID0000019 1
+VARS merged_netcdf2png_ID0000019 +DAGNodeRetry="$(RETRY)"
+
+JOB mvt_ID0000020 00/00/mvt_ID0000020.sub
+SCRIPT POST mvt_ID0000020 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/mvt_ID0000020.out
+PRIORITY mvt_ID0000020 30
+RETRY mvt_ID0000020 1
+VARS mvt_ID0000020 +DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_condorpool_2_0 00/00/stage_out_local_condorpool_2_0.sub
+SCRIPT POST stage_out_local_condorpool_2_0 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/stage_out_local_condorpool_2_0.out
+PRIORITY stage_out_local_condorpool_2_0 900
+RETRY stage_out_local_condorpool_2_0 1
+CATEGORY stage_out_local_condorpool_2_0 stageout
+VARS stage_out_local_condorpool_2_0 +DAGNodeRetry="$(RETRY)"
+
+JOB pointalert_ID0000021 00/00/pointalert_ID0000021.sub
+SCRIPT POST pointalert_ID0000021 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/pointalert_ID0000021.out
+PRIORITY pointalert_ID0000021 40
+RETRY pointalert_ID0000021 1
+VARS pointalert_ID0000021 +DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_condorpool_3_0 00/00/stage_out_local_condorpool_3_0.sub
+SCRIPT POST stage_out_local_condorpool_3_0 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/stage_out_local_condorpool_3_0.out
+PRIORITY stage_out_local_condorpool_3_0 900
+RETRY stage_out_local_condorpool_3_0 1
+CATEGORY stage_out_local_condorpool_3_0 stageout
+VARS stage_out_local_condorpool_3_0 +DAGNodeRetry="$(RETRY)"
+
+JOB cleanup_casa_wind_wf-20200817T051428Z_0_condorpool 00/00/cleanup_casa_wind_wf-20200817T051428Z_0_condorpool.sub
+SCRIPT POST cleanup_casa_wind_wf-20200817T051428Z_0_condorpool /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/cleanup_casa_wind_wf-20200817T051428Z_0_condorpool.out
+PRIORITY cleanup_casa_wind_wf-20200817T051428Z_0_condorpool 1000
+RETRY cleanup_casa_wind_wf-20200817T051428Z_0_condorpool 1
+VARS cleanup_casa_wind_wf-20200817T051428Z_0_condorpool +DAGNodeRetry="$(RETRY)"
+
+PARENT  stage_out_local_condorpool_1_0 CHILD cleanup_casa_wind_wf-20200817T051428Z_0_condorpool
+PARENT  stage_out_local_condorpool_2_0 CHILD cleanup_casa_wind_wf-20200817T051428Z_0_condorpool
+PARENT  stage_out_local_condorpool_3_0 CHILD cleanup_casa_wind_wf-20200817T051428Z_0_condorpool
+PARENT  gunzip_ID0000004 CHILD um_vel_ID0000018
+PARENT  gunzip_ID0000003 CHILD um_vel_ID0000018
+PARENT  gunzip_ID0000002 CHILD um_vel_ID0000018
+PARENT  gunzip_ID0000001 CHILD um_vel_ID0000018
+PARENT  gunzip_ID0000008 CHILD um_vel_ID0000018
+PARENT  gunzip_ID0000007 CHILD um_vel_ID0000018
+PARENT  gunzip_ID0000006 CHILD um_vel_ID0000018
+PARENT  pointalert_ID0000021 CHILD stage_out_local_condorpool_3_0
+PARENT  gunzip_ID0000005 CHILD um_vel_ID0000018
+PARENT  create_dir_casa_wind_wf-20200817T051428Z_0_condorpool CHILD gunzip_ID0000009
+PARENT  create_dir_casa_wind_wf-20200817T051428Z_0_condorpool CHILD gunzip_ID0000011
+PARENT  create_dir_casa_wind_wf-20200817T051428Z_0_condorpool CHILD gunzip_ID0000010
+PARENT  create_dir_casa_wind_wf-20200817T051428Z_0_condorpool CHILD gunzip_ID0000004
+PARENT  create_dir_casa_wind_wf-20200817T051428Z_0_condorpool CHILD gunzip_ID0000015
+PARENT  create_dir_casa_wind_wf-20200817T051428Z_0_condorpool CHILD gunzip_ID0000003
+PARENT  create_dir_casa_wind_wf-20200817T051428Z_0_condorpool CHILD gunzip_ID0000014
+PARENT  create_dir_casa_wind_wf-20200817T051428Z_0_condorpool CHILD gunzip_ID0000002
+PARENT  create_dir_casa_wind_wf-20200817T051428Z_0_condorpool CHILD gunzip_ID0000013
+PARENT  create_dir_casa_wind_wf-20200817T051428Z_0_condorpool CHILD gunzip_ID0000001
+PARENT  create_dir_casa_wind_wf-20200817T051428Z_0_condorpool CHILD gunzip_ID0000012
+PARENT  create_dir_casa_wind_wf-20200817T051428Z_0_condorpool CHILD gunzip_ID0000008
+PARENT  create_dir_casa_wind_wf-20200817T051428Z_0_condorpool CHILD gunzip_ID0000007
+PARENT  create_dir_casa_wind_wf-20200817T051428Z_0_condorpool CHILD gunzip_ID0000006
+PARENT  create_dir_casa_wind_wf-20200817T051428Z_0_condorpool CHILD gunzip_ID0000017
+PARENT  create_dir_casa_wind_wf-20200817T051428Z_0_condorpool CHILD gunzip_ID0000005
+PARENT  create_dir_casa_wind_wf-20200817T051428Z_0_condorpool CHILD gunzip_ID0000016
+PARENT  gunzip_ID0000009 CHILD um_vel_ID0000018
+PARENT  um_vel_ID0000018 CHILD stage_out_local_condorpool_1_0
+PARENT  um_vel_ID0000018 CHILD merged_netcdf2png_ID0000019
+PARENT  um_vel_ID0000018 CHILD mvt_ID0000020
+PARENT  mvt_ID0000020 CHILD stage_out_local_condorpool_2_0
+PARENT  mvt_ID0000020 CHILD pointalert_ID0000021
+PARENT  gunzip_ID0000011 CHILD um_vel_ID0000018
+PARENT  gunzip_ID0000010 CHILD um_vel_ID0000018
+PARENT  gunzip_ID0000015 CHILD um_vel_ID0000018
+PARENT  gunzip_ID0000014 CHILD um_vel_ID0000018
+PARENT  gunzip_ID0000013 CHILD um_vel_ID0000018
+PARENT  gunzip_ID0000012 CHILD um_vel_ID0000018
+PARENT  merged_netcdf2png_ID0000019 CHILD stage_out_local_condorpool_2_0
+PARENT  gunzip_ID0000017 CHILD um_vel_ID0000018
+PARENT  gunzip_ID0000016 CHILD um_vel_ID0000018
+######################################################################
+# End of DAG
+######################################################################

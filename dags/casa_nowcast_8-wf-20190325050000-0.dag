@@ -1,0 +1,113 @@
+######################################################################
+# PEGASUS WMS GENERATED DAG FILE
+# DAG casa_nowcast-wf-20190325050000
+# Index = 0, Count = 1
+######################################################################
+MAXJOBS cleanup 4
+MAXJOBS registration 1
+MAXJOBS stageout 10
+MAXJOBS stagein 10
+
+JOB create_dir_casa_nowcast-wf-20190325050000_0_condorpool 00/00/create_dir_casa_nowcast-wf-20190325050000_0_condorpool.sub
+SCRIPT POST create_dir_casa_nowcast-wf-20190325050000_0_condorpool /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -l casa_nowcast-wf-20190325050000-0.exitcode.log -M casa_nowcast-wf-20190325050000-0.cache.meta -N   .//00/00/create_dir_casa_nowcast-wf-20190325050000_0_condorpool.out
+PRIORITY create_dir_casa_nowcast-wf-20190325050000_0_condorpool 800
+RETRY create_dir_casa_nowcast-wf-20190325050000_0_condorpool 1
+VARS create_dir_casa_nowcast-wf-20190325050000_0_condorpool +DAGNodeRetry="$(RETRY)"
+
+JOB NowcastToWDSS2_ID0000001 00/00/NowcastToWDSS2_ID0000001.sub
+SCRIPT POST NowcastToWDSS2_ID0000001 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_nowcast-wf-20190325050000-0.exitcode.log -M casa_nowcast-wf-20190325050000-0.cache.meta -N   .//00/00/NowcastToWDSS2_ID0000001.out
+PRIORITY NowcastToWDSS2_ID0000001 10
+RETRY NowcastToWDSS2_ID0000001 1
+VARS NowcastToWDSS2_ID0000001 +DAGNodeRetry="$(RETRY)"
+
+JOB merge_mrtV2_PID2_ID4 00/00/merge_mrtV2_PID2_ID4.sub
+SCRIPT POST merge_mrtV2_PID2_ID4 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_nowcast-wf-20190325050000-0.exitcode.log -M casa_nowcast-wf-20190325050000-0.cache.meta -N   .//00/00/merge_mrtV2_PID2_ID4.out
+PRIORITY merge_mrtV2_PID2_ID4 20
+RETRY merge_mrtV2_PID2_ID4 1
+VARS merge_mrtV2_PID2_ID4 +DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_condorpool_0_0 00/00/stage_out_local_condorpool_0_0.sub
+SCRIPT POST stage_out_local_condorpool_0_0 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -l casa_nowcast-wf-20190325050000-0.exitcode.log -M casa_nowcast-wf-20190325050000-0.cache.meta -N   .//00/00/stage_out_local_condorpool_0_0.out
+PRIORITY stage_out_local_condorpool_0_0 900
+RETRY stage_out_local_condorpool_0_0 1
+CATEGORY stage_out_local_condorpool_0_0 stageout
+VARS stage_out_local_condorpool_0_0 +DAGNodeRetry="$(RETRY)"
+
+JOB merge_merged_netcdf2png_PID2_ID2 00/00/merge_merged_netcdf2png_PID2_ID2.sub
+SCRIPT POST merge_merged_netcdf2png_PID2_ID2 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_nowcast-wf-20190325050000-0.exitcode.log -M casa_nowcast-wf-20190325050000-0.cache.meta -N   .//00/00/merge_merged_netcdf2png_PID2_ID2.out
+PRIORITY merge_merged_netcdf2png_PID2_ID2 20
+RETRY merge_merged_netcdf2png_PID2_ID2 1
+VARS merge_merged_netcdf2png_PID2_ID2 +DAGNodeRetry="$(RETRY)"
+
+JOB merge_merged_netcdf2png_PID2_ID1 00/00/merge_merged_netcdf2png_PID2_ID1.sub
+SCRIPT POST merge_merged_netcdf2png_PID2_ID1 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_nowcast-wf-20190325050000-0.exitcode.log -M casa_nowcast-wf-20190325050000-0.cache.meta -N   .//00/00/merge_merged_netcdf2png_PID2_ID1.out
+PRIORITY merge_merged_netcdf2png_PID2_ID1 20
+RETRY merge_merged_netcdf2png_PID2_ID1 1
+VARS merge_merged_netcdf2png_PID2_ID1 +DAGNodeRetry="$(RETRY)"
+
+JOB merge_merged_netcdf2png_PID2_ID4 00/00/merge_merged_netcdf2png_PID2_ID4.sub
+SCRIPT POST merge_merged_netcdf2png_PID2_ID4 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_nowcast-wf-20190325050000-0.exitcode.log -M casa_nowcast-wf-20190325050000-0.cache.meta -N   .//00/00/merge_merged_netcdf2png_PID2_ID4.out
+PRIORITY merge_merged_netcdf2png_PID2_ID4 20
+RETRY merge_merged_netcdf2png_PID2_ID4 1
+VARS merge_merged_netcdf2png_PID2_ID4 +DAGNodeRetry="$(RETRY)"
+
+JOB merge_mrtV2_PID2_ID1 00/00/merge_mrtV2_PID2_ID1.sub
+SCRIPT POST merge_mrtV2_PID2_ID1 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_nowcast-wf-20190325050000-0.exitcode.log -M casa_nowcast-wf-20190325050000-0.cache.meta -N   .//00/00/merge_mrtV2_PID2_ID1.out
+PRIORITY merge_mrtV2_PID2_ID1 20
+RETRY merge_mrtV2_PID2_ID1 1
+VARS merge_mrtV2_PID2_ID1 +DAGNodeRetry="$(RETRY)"
+
+JOB merge_merged_netcdf2png_PID2_ID3 00/00/merge_merged_netcdf2png_PID2_ID3.sub
+SCRIPT POST merge_merged_netcdf2png_PID2_ID3 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_nowcast-wf-20190325050000-0.exitcode.log -M casa_nowcast-wf-20190325050000-0.cache.meta -N   .//00/00/merge_merged_netcdf2png_PID2_ID3.out
+PRIORITY merge_merged_netcdf2png_PID2_ID3 20
+RETRY merge_merged_netcdf2png_PID2_ID3 1
+VARS merge_merged_netcdf2png_PID2_ID3 +DAGNodeRetry="$(RETRY)"
+
+JOB merge_mrtV2_PID2_ID2 00/00/merge_mrtV2_PID2_ID2.sub
+SCRIPT POST merge_mrtV2_PID2_ID2 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_nowcast-wf-20190325050000-0.exitcode.log -M casa_nowcast-wf-20190325050000-0.cache.meta -N   .//00/00/merge_mrtV2_PID2_ID2.out
+PRIORITY merge_mrtV2_PID2_ID2 20
+RETRY merge_mrtV2_PID2_ID2 1
+VARS merge_mrtV2_PID2_ID2 +DAGNodeRetry="$(RETRY)"
+
+JOB merge_mrtV2_PID2_ID3 00/00/merge_mrtV2_PID2_ID3.sub
+SCRIPT POST merge_mrtV2_PID2_ID3 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_nowcast-wf-20190325050000-0.exitcode.log -M casa_nowcast-wf-20190325050000-0.cache.meta -N   .//00/00/merge_mrtV2_PID2_ID3.out
+PRIORITY merge_mrtV2_PID2_ID3 20
+RETRY merge_mrtV2_PID2_ID3 1
+VARS merge_mrtV2_PID2_ID3 +DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_condorpool_1_0 00/00/stage_out_local_condorpool_1_0.sub
+SCRIPT POST stage_out_local_condorpool_1_0 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -l casa_nowcast-wf-20190325050000-0.exitcode.log -M casa_nowcast-wf-20190325050000-0.cache.meta -N   .//00/00/stage_out_local_condorpool_1_0.out
+PRIORITY stage_out_local_condorpool_1_0 900
+RETRY stage_out_local_condorpool_1_0 1
+CATEGORY stage_out_local_condorpool_1_0 stageout
+VARS stage_out_local_condorpool_1_0 +DAGNodeRetry="$(RETRY)"
+
+JOB cleanup_casa_nowcast-wf-20190325050000_0_condorpool 00/00/cleanup_casa_nowcast-wf-20190325050000_0_condorpool.sub
+SCRIPT POST cleanup_casa_nowcast-wf-20190325050000_0_condorpool /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -l casa_nowcast-wf-20190325050000-0.exitcode.log -M casa_nowcast-wf-20190325050000-0.cache.meta -N   .//00/00/cleanup_casa_nowcast-wf-20190325050000_0_condorpool.out
+PRIORITY cleanup_casa_nowcast-wf-20190325050000_0_condorpool 1000
+RETRY cleanup_casa_nowcast-wf-20190325050000_0_condorpool 1
+VARS cleanup_casa_nowcast-wf-20190325050000_0_condorpool +DAGNodeRetry="$(RETRY)"
+
+PARENT  merge_mrtV2_PID2_ID4 CHILD stage_out_local_condorpool_1_0
+PARENT  stage_out_local_condorpool_1_0 CHILD cleanup_casa_nowcast-wf-20190325050000_0_condorpool
+PARENT  merge_mrtV2_PID2_ID1 CHILD stage_out_local_condorpool_1_0
+PARENT  merge_mrtV2_PID2_ID2 CHILD stage_out_local_condorpool_1_0
+PARENT  merge_mrtV2_PID2_ID3 CHILD stage_out_local_condorpool_1_0
+PARENT  stage_out_local_condorpool_0_0 CHILD cleanup_casa_nowcast-wf-20190325050000_0_condorpool
+PARENT  merge_merged_netcdf2png_PID2_ID2 CHILD stage_out_local_condorpool_1_0
+PARENT  merge_merged_netcdf2png_PID2_ID1 CHILD stage_out_local_condorpool_1_0
+PARENT  merge_merged_netcdf2png_PID2_ID4 CHILD stage_out_local_condorpool_1_0
+PARENT  merge_merged_netcdf2png_PID2_ID3 CHILD stage_out_local_condorpool_1_0
+PARENT  NowcastToWDSS2_ID0000001 CHILD merge_mrtV2_PID2_ID4
+PARENT  NowcastToWDSS2_ID0000001 CHILD stage_out_local_condorpool_0_0
+PARENT  NowcastToWDSS2_ID0000001 CHILD merge_merged_netcdf2png_PID2_ID2
+PARENT  NowcastToWDSS2_ID0000001 CHILD merge_merged_netcdf2png_PID2_ID1
+PARENT  NowcastToWDSS2_ID0000001 CHILD merge_merged_netcdf2png_PID2_ID4
+PARENT  NowcastToWDSS2_ID0000001 CHILD merge_mrtV2_PID2_ID1
+PARENT  NowcastToWDSS2_ID0000001 CHILD merge_merged_netcdf2png_PID2_ID3
+PARENT  NowcastToWDSS2_ID0000001 CHILD merge_mrtV2_PID2_ID2
+PARENT  NowcastToWDSS2_ID0000001 CHILD merge_mrtV2_PID2_ID3
+PARENT  create_dir_casa_nowcast-wf-20190325050000_0_condorpool CHILD NowcastToWDSS2_ID0000001
+######################################################################
+# End of DAG
+######################################################################

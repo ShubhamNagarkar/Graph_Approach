@@ -1,0 +1,487 @@
+######################################################################
+# PEGASUS WMS GENERATED DAG FILE
+# DAG 1000genome-20200406T033822Z
+# Index = 0, Count = 1
+######################################################################
+MAXJOBS registration 1
+MAXJOBS stagein 10
+MAXJOBS cleanup 4
+MAXJOBS stageout 10
+
+JOB create_dir_1000genome-20200406T033822Z_0_condorpool 00/01/create_dir_1000genome-20200406T033822Z_0_condorpool.sub
+SCRIPT POST create_dir_1000genome-20200406T033822Z_0_condorpool /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/01/create_dir_1000genome-20200406T033822Z_0_condorpool.out
+PRIORITY create_dir_1000genome-20200406T033822Z_0_condorpool 800
+RETRY create_dir_1000genome-20200406T033822Z_0_condorpool 1
+VARS create_dir_1000genome-20200406T033822Z_0_condorpool +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_ID0000004 00/00/individuals_ID0000004.sub
+SCRIPT POST individuals_ID0000004 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_ID0000004.out
+PRIORITY individuals_ID0000004 10
+RETRY individuals_ID0000004 1
+VARS individuals_ID0000004 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_ID0000015 00/00/individuals_ID0000015.sub
+SCRIPT POST individuals_ID0000015 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_ID0000015.out
+PRIORITY individuals_ID0000015 10
+RETRY individuals_ID0000015 1
+VARS individuals_ID0000015 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_ID0000005 00/00/individuals_ID0000005.sub
+SCRIPT POST individuals_ID0000005 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_ID0000005.out
+PRIORITY individuals_ID0000005 10
+RETRY individuals_ID0000005 1
+VARS individuals_ID0000005 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_ID0000016 00/00/individuals_ID0000016.sub
+SCRIPT POST individuals_ID0000016 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_ID0000016.out
+PRIORITY individuals_ID0000016 10
+RETRY individuals_ID0000016 1
+VARS individuals_ID0000016 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_ID0000006 00/00/individuals_ID0000006.sub
+SCRIPT POST individuals_ID0000006 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_ID0000006.out
+PRIORITY individuals_ID0000006 10
+RETRY individuals_ID0000006 1
+VARS individuals_ID0000006 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_ID0000017 00/00/individuals_ID0000017.sub
+SCRIPT POST individuals_ID0000017 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_ID0000017.out
+PRIORITY individuals_ID0000017 10
+RETRY individuals_ID0000017 1
+VARS individuals_ID0000017 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_ID0000007 00/00/individuals_ID0000007.sub
+SCRIPT POST individuals_ID0000007 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_ID0000007.out
+PRIORITY individuals_ID0000007 10
+RETRY individuals_ID0000007 1
+VARS individuals_ID0000007 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_ID0000018 00/00/individuals_ID0000018.sub
+SCRIPT POST individuals_ID0000018 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_ID0000018.out
+PRIORITY individuals_ID0000018 10
+RETRY individuals_ID0000018 1
+VARS individuals_ID0000018 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_ID0000022 00/00/individuals_ID0000022.sub
+SCRIPT POST individuals_ID0000022 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_ID0000022.out
+PRIORITY individuals_ID0000022 10
+RETRY individuals_ID0000022 1
+VARS individuals_ID0000022 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_ID0000001 00/00/individuals_ID0000001.sub
+SCRIPT POST individuals_ID0000001 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_ID0000001.out
+PRIORITY individuals_ID0000001 10
+RETRY individuals_ID0000001 1
+VARS individuals_ID0000001 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_ID0000002 00/00/individuals_ID0000002.sub
+SCRIPT POST individuals_ID0000002 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_ID0000002.out
+PRIORITY individuals_ID0000002 10
+RETRY individuals_ID0000002 1
+VARS individuals_ID0000002 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_ID0000013 00/00/individuals_ID0000013.sub
+SCRIPT POST individuals_ID0000013 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_ID0000013.out
+PRIORITY individuals_ID0000013 10
+RETRY individuals_ID0000013 1
+VARS individuals_ID0000013 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_ID0000003 00/00/individuals_ID0000003.sub
+SCRIPT POST individuals_ID0000003 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_ID0000003.out
+PRIORITY individuals_ID0000003 10
+RETRY individuals_ID0000003 1
+VARS individuals_ID0000003 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_ID0000014 00/00/individuals_ID0000014.sub
+SCRIPT POST individuals_ID0000014 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_ID0000014.out
+PRIORITY individuals_ID0000014 10
+RETRY individuals_ID0000014 1
+VARS individuals_ID0000014 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_ID0000008 00/00/individuals_ID0000008.sub
+SCRIPT POST individuals_ID0000008 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_ID0000008.out
+PRIORITY individuals_ID0000008 10
+RETRY individuals_ID0000008 1
+VARS individuals_ID0000008 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_ID0000019 00/00/individuals_ID0000019.sub
+SCRIPT POST individuals_ID0000019 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_ID0000019.out
+PRIORITY individuals_ID0000019 10
+RETRY individuals_ID0000019 1
+VARS individuals_ID0000019 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_ID0000009 00/00/individuals_ID0000009.sub
+SCRIPT POST individuals_ID0000009 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_ID0000009.out
+PRIORITY individuals_ID0000009 10
+RETRY individuals_ID0000009 1
+VARS individuals_ID0000009 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_ID0000020 00/00/individuals_ID0000020.sub
+SCRIPT POST individuals_ID0000020 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_ID0000020.out
+PRIORITY individuals_ID0000020 10
+RETRY individuals_ID0000020 1
+VARS individuals_ID0000020 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_ID0000010 00/00/individuals_ID0000010.sub
+SCRIPT POST individuals_ID0000010 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_ID0000010.out
+PRIORITY individuals_ID0000010 10
+RETRY individuals_ID0000010 1
+VARS individuals_ID0000010 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_ID0000021 00/00/individuals_ID0000021.sub
+SCRIPT POST individuals_ID0000021 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_ID0000021.out
+PRIORITY individuals_ID0000021 10
+RETRY individuals_ID0000021 1
+VARS individuals_ID0000021 +DAGNodeRetry="$(RETRY)"
+
+JOB sifting_ID0000012 00/00/sifting_ID0000012.sub
+SCRIPT POST sifting_ID0000012 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/sifting_ID0000012.out
+PRIORITY sifting_ID0000012 10
+RETRY sifting_ID0000012 1
+VARS sifting_ID0000012 +DAGNodeRetry="$(RETRY)"
+
+JOB sifting_ID0000024 00/00/sifting_ID0000024.sub
+SCRIPT POST sifting_ID0000024 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/sifting_ID0000024.out
+PRIORITY sifting_ID0000024 10
+RETRY sifting_ID0000024 1
+VARS sifting_ID0000024 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_merge_ID0000011 00/00/individuals_merge_ID0000011.sub
+SCRIPT POST individuals_merge_ID0000011 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_merge_ID0000011.out
+PRIORITY individuals_merge_ID0000011 20
+RETRY individuals_merge_ID0000011 1
+VARS individuals_merge_ID0000011 +DAGNodeRetry="$(RETRY)"
+
+JOB individuals_merge_ID0000023 00/00/individuals_merge_ID0000023.sub
+SCRIPT POST individuals_merge_ID0000023 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/individuals_merge_ID0000023.out
+PRIORITY individuals_merge_ID0000023 20
+RETRY individuals_merge_ID0000023 1
+VARS individuals_merge_ID0000023 +DAGNodeRetry="$(RETRY)"
+
+JOB frequency_ID0000030 00/00/frequency_ID0000030.sub
+SCRIPT POST frequency_ID0000030 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/frequency_ID0000030.out
+PRIORITY frequency_ID0000030 30
+RETRY frequency_ID0000030 1
+VARS frequency_ID0000030 +DAGNodeRetry="$(RETRY)"
+
+JOB mutation_overlap_ID0000031 00/00/mutation_overlap_ID0000031.sub
+SCRIPT POST mutation_overlap_ID0000031 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/mutation_overlap_ID0000031.out
+PRIORITY mutation_overlap_ID0000031 30
+RETRY mutation_overlap_ID0000031 1
+VARS mutation_overlap_ID0000031 +DAGNodeRetry="$(RETRY)"
+
+JOB frequency_ID0000036 00/00/frequency_ID0000036.sub
+SCRIPT POST frequency_ID0000036 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/frequency_ID0000036.out
+PRIORITY frequency_ID0000036 30
+RETRY frequency_ID0000036 1
+VARS frequency_ID0000036 +DAGNodeRetry="$(RETRY)"
+
+JOB frequency_ID0000026 00/00/frequency_ID0000026.sub
+SCRIPT POST frequency_ID0000026 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/frequency_ID0000026.out
+PRIORITY frequency_ID0000026 30
+RETRY frequency_ID0000026 1
+VARS frequency_ID0000026 +DAGNodeRetry="$(RETRY)"
+
+JOB mutation_overlap_ID0000033 00/00/mutation_overlap_ID0000033.sub
+SCRIPT POST mutation_overlap_ID0000033 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/mutation_overlap_ID0000033.out
+PRIORITY mutation_overlap_ID0000033 30
+RETRY mutation_overlap_ID0000033 1
+VARS mutation_overlap_ID0000033 +DAGNodeRetry="$(RETRY)"
+
+JOB frequency_ID0000038 00/00/frequency_ID0000038.sub
+SCRIPT POST frequency_ID0000038 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/frequency_ID0000038.out
+PRIORITY frequency_ID0000038 30
+RETRY frequency_ID0000038 1
+VARS frequency_ID0000038 +DAGNodeRetry="$(RETRY)"
+
+JOB frequency_ID0000032 00/00/frequency_ID0000032.sub
+SCRIPT POST frequency_ID0000032 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/frequency_ID0000032.out
+PRIORITY frequency_ID0000032 30
+RETRY frequency_ID0000032 1
+VARS frequency_ID0000032 +DAGNodeRetry="$(RETRY)"
+
+JOB frequency_ID0000034 00/00/frequency_ID0000034.sub
+SCRIPT POST frequency_ID0000034 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/frequency_ID0000034.out
+PRIORITY frequency_ID0000034 30
+RETRY frequency_ID0000034 1
+VARS frequency_ID0000034 +DAGNodeRetry="$(RETRY)"
+
+JOB mutation_overlap_ID0000027 00/00/mutation_overlap_ID0000027.sub
+SCRIPT POST mutation_overlap_ID0000027 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/mutation_overlap_ID0000027.out
+PRIORITY mutation_overlap_ID0000027 30
+RETRY mutation_overlap_ID0000027 1
+VARS mutation_overlap_ID0000027 +DAGNodeRetry="$(RETRY)"
+
+JOB mutation_overlap_ID0000029 00/00/mutation_overlap_ID0000029.sub
+SCRIPT POST mutation_overlap_ID0000029 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/mutation_overlap_ID0000029.out
+PRIORITY mutation_overlap_ID0000029 30
+RETRY mutation_overlap_ID0000029 1
+VARS mutation_overlap_ID0000029 +DAGNodeRetry="$(RETRY)"
+
+JOB frequency_ID0000028 00/00/frequency_ID0000028.sub
+SCRIPT POST frequency_ID0000028 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/frequency_ID0000028.out
+PRIORITY frequency_ID0000028 30
+RETRY frequency_ID0000028 1
+VARS frequency_ID0000028 +DAGNodeRetry="$(RETRY)"
+
+JOB mutation_overlap_ID0000035 00/00/mutation_overlap_ID0000035.sub
+SCRIPT POST mutation_overlap_ID0000035 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/mutation_overlap_ID0000035.out
+PRIORITY mutation_overlap_ID0000035 30
+RETRY mutation_overlap_ID0000035 1
+VARS mutation_overlap_ID0000035 +DAGNodeRetry="$(RETRY)"
+
+JOB mutation_overlap_ID0000037 00/00/mutation_overlap_ID0000037.sub
+SCRIPT POST mutation_overlap_ID0000037 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/mutation_overlap_ID0000037.out
+PRIORITY mutation_overlap_ID0000037 30
+RETRY mutation_overlap_ID0000037 1
+VARS mutation_overlap_ID0000037 +DAGNodeRetry="$(RETRY)"
+
+JOB mutation_overlap_ID0000025 00/00/mutation_overlap_ID0000025.sub
+SCRIPT POST mutation_overlap_ID0000025 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/mutation_overlap_ID0000025.out
+PRIORITY mutation_overlap_ID0000025 30
+RETRY mutation_overlap_ID0000025 1
+VARS mutation_overlap_ID0000025 +DAGNodeRetry="$(RETRY)"
+
+JOB frequency_ID0000050 00/00/frequency_ID0000050.sub
+SCRIPT POST frequency_ID0000050 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/frequency_ID0000050.out
+PRIORITY frequency_ID0000050 30
+RETRY frequency_ID0000050 1
+VARS frequency_ID0000050 +DAGNodeRetry="$(RETRY)"
+
+JOB frequency_ID0000040 00/00/frequency_ID0000040.sub
+SCRIPT POST frequency_ID0000040 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/frequency_ID0000040.out
+PRIORITY frequency_ID0000040 30
+RETRY frequency_ID0000040 1
+VARS frequency_ID0000040 +DAGNodeRetry="$(RETRY)"
+
+JOB frequency_ID0000052 00/00/frequency_ID0000052.sub
+SCRIPT POST frequency_ID0000052 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/frequency_ID0000052.out
+PRIORITY frequency_ID0000052 30
+RETRY frequency_ID0000052 1
+VARS frequency_ID0000052 +DAGNodeRetry="$(RETRY)"
+
+JOB frequency_ID0000046 00/00/frequency_ID0000046.sub
+SCRIPT POST frequency_ID0000046 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/frequency_ID0000046.out
+PRIORITY frequency_ID0000046 30
+RETRY frequency_ID0000046 1
+VARS frequency_ID0000046 +DAGNodeRetry="$(RETRY)"
+
+JOB mutation_overlap_ID0000041 00/00/mutation_overlap_ID0000041.sub
+SCRIPT POST mutation_overlap_ID0000041 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/mutation_overlap_ID0000041.out
+PRIORITY mutation_overlap_ID0000041 30
+RETRY mutation_overlap_ID0000041 1
+VARS mutation_overlap_ID0000041 +DAGNodeRetry="$(RETRY)"
+
+JOB frequency_ID0000048 00/00/frequency_ID0000048.sub
+SCRIPT POST frequency_ID0000048 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/frequency_ID0000048.out
+PRIORITY frequency_ID0000048 30
+RETRY frequency_ID0000048 1
+VARS frequency_ID0000048 +DAGNodeRetry="$(RETRY)"
+
+JOB mutation_overlap_ID0000043 00/00/mutation_overlap_ID0000043.sub
+SCRIPT POST mutation_overlap_ID0000043 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/00/mutation_overlap_ID0000043.out
+PRIORITY mutation_overlap_ID0000043 30
+RETRY mutation_overlap_ID0000043 1
+VARS mutation_overlap_ID0000043 +DAGNodeRetry="$(RETRY)"
+
+JOB frequency_ID0000042 00/01/frequency_ID0000042.sub
+SCRIPT POST frequency_ID0000042 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/01/frequency_ID0000042.out
+PRIORITY frequency_ID0000042 30
+RETRY frequency_ID0000042 1
+VARS frequency_ID0000042 +DAGNodeRetry="$(RETRY)"
+
+JOB frequency_ID0000044 00/01/frequency_ID0000044.sub
+SCRIPT POST frequency_ID0000044 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/01/frequency_ID0000044.out
+PRIORITY frequency_ID0000044 30
+RETRY frequency_ID0000044 1
+VARS frequency_ID0000044 +DAGNodeRetry="$(RETRY)"
+
+JOB mutation_overlap_ID0000051 00/01/mutation_overlap_ID0000051.sub
+SCRIPT POST mutation_overlap_ID0000051 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/01/mutation_overlap_ID0000051.out
+PRIORITY mutation_overlap_ID0000051 30
+RETRY mutation_overlap_ID0000051 1
+VARS mutation_overlap_ID0000051 +DAGNodeRetry="$(RETRY)"
+
+JOB mutation_overlap_ID0000039 00/01/mutation_overlap_ID0000039.sub
+SCRIPT POST mutation_overlap_ID0000039 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/01/mutation_overlap_ID0000039.out
+PRIORITY mutation_overlap_ID0000039 30
+RETRY mutation_overlap_ID0000039 1
+VARS mutation_overlap_ID0000039 +DAGNodeRetry="$(RETRY)"
+
+JOB mutation_overlap_ID0000049 00/01/mutation_overlap_ID0000049.sub
+SCRIPT POST mutation_overlap_ID0000049 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/01/mutation_overlap_ID0000049.out
+PRIORITY mutation_overlap_ID0000049 30
+RETRY mutation_overlap_ID0000049 1
+VARS mutation_overlap_ID0000049 +DAGNodeRetry="$(RETRY)"
+
+JOB mutation_overlap_ID0000045 00/01/mutation_overlap_ID0000045.sub
+SCRIPT POST mutation_overlap_ID0000045 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/01/mutation_overlap_ID0000045.out
+PRIORITY mutation_overlap_ID0000045 30
+RETRY mutation_overlap_ID0000045 1
+VARS mutation_overlap_ID0000045 +DAGNodeRetry="$(RETRY)"
+
+JOB mutation_overlap_ID0000047 00/01/mutation_overlap_ID0000047.sub
+SCRIPT POST mutation_overlap_ID0000047 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/01/mutation_overlap_ID0000047.out
+PRIORITY mutation_overlap_ID0000047 30
+RETRY mutation_overlap_ID0000047 1
+VARS mutation_overlap_ID0000047 +DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_condorpool_2_1 00/01/stage_out_local_condorpool_2_1.sub
+SCRIPT POST stage_out_local_condorpool_2_1 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/01/stage_out_local_condorpool_2_1.out
+PRIORITY stage_out_local_condorpool_2_1 900
+RETRY stage_out_local_condorpool_2_1 1
+CATEGORY stage_out_local_condorpool_2_1 stageout
+VARS stage_out_local_condorpool_2_1 +DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_condorpool_2_2 00/01/stage_out_local_condorpool_2_2.sub
+SCRIPT POST stage_out_local_condorpool_2_2 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/01/stage_out_local_condorpool_2_2.out
+PRIORITY stage_out_local_condorpool_2_2 900
+RETRY stage_out_local_condorpool_2_2 1
+CATEGORY stage_out_local_condorpool_2_2 stageout
+VARS stage_out_local_condorpool_2_2 +DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_condorpool_2_0 00/01/stage_out_local_condorpool_2_0.sub
+SCRIPT POST stage_out_local_condorpool_2_0 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/01/stage_out_local_condorpool_2_0.out
+PRIORITY stage_out_local_condorpool_2_0 900
+RETRY stage_out_local_condorpool_2_0 1
+CATEGORY stage_out_local_condorpool_2_0 stageout
+VARS stage_out_local_condorpool_2_0 +DAGNodeRetry="$(RETRY)"
+
+JOB cleanup_1000genome-20200406T033822Z_0_condorpool 00/01/cleanup_1000genome-20200406T033822Z_0_condorpool.sub
+SCRIPT POST cleanup_1000genome-20200406T033822Z_0_condorpool /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -l 1000genome-20200406T033822Z-0.exitcode.log -M 1000genome-20200406T033822Z-0.cache.meta  .//00/01/cleanup_1000genome-20200406T033822Z_0_condorpool.out
+PRIORITY cleanup_1000genome-20200406T033822Z_0_condorpool 1000
+RETRY cleanup_1000genome-20200406T033822Z_0_condorpool 1
+VARS cleanup_1000genome-20200406T033822Z_0_condorpool +DAGNodeRetry="$(RETRY)"
+
+PARENT  frequency_ID0000040 CHILD stage_out_local_condorpool_2_0
+PARENT  frequency_ID0000046 CHILD stage_out_local_condorpool_2_2
+PARENT  mutation_overlap_ID0000041 CHILD stage_out_local_condorpool_2_0
+PARENT  frequency_ID0000048 CHILD stage_out_local_condorpool_2_1
+PARENT  mutation_overlap_ID0000043 CHILD stage_out_local_condorpool_2_2
+PARENT  frequency_ID0000042 CHILD stage_out_local_condorpool_2_0
+PARENT  frequency_ID0000044 CHILD stage_out_local_condorpool_2_1
+PARENT  mutation_overlap_ID0000049 CHILD stage_out_local_condorpool_2_1
+PARENT  sifting_ID0000012 CHILD frequency_ID0000030
+PARENT  sifting_ID0000012 CHILD mutation_overlap_ID0000031
+PARENT  sifting_ID0000012 CHILD frequency_ID0000036
+PARENT  sifting_ID0000012 CHILD frequency_ID0000026
+PARENT  sifting_ID0000012 CHILD mutation_overlap_ID0000033
+PARENT  sifting_ID0000012 CHILD frequency_ID0000038
+PARENT  sifting_ID0000012 CHILD frequency_ID0000032
+PARENT  sifting_ID0000012 CHILD frequency_ID0000034
+PARENT  sifting_ID0000012 CHILD mutation_overlap_ID0000027
+PARENT  sifting_ID0000012 CHILD mutation_overlap_ID0000029
+PARENT  sifting_ID0000012 CHILD frequency_ID0000028
+PARENT  sifting_ID0000012 CHILD mutation_overlap_ID0000035
+PARENT  sifting_ID0000012 CHILD mutation_overlap_ID0000037
+PARENT  sifting_ID0000012 CHILD mutation_overlap_ID0000025
+PARENT  individuals_merge_ID0000023 CHILD frequency_ID0000050
+PARENT  individuals_merge_ID0000023 CHILD frequency_ID0000040
+PARENT  individuals_merge_ID0000023 CHILD frequency_ID0000052
+PARENT  individuals_merge_ID0000023 CHILD frequency_ID0000046
+PARENT  individuals_merge_ID0000023 CHILD mutation_overlap_ID0000041
+PARENT  individuals_merge_ID0000023 CHILD frequency_ID0000048
+PARENT  individuals_merge_ID0000023 CHILD mutation_overlap_ID0000043
+PARENT  individuals_merge_ID0000023 CHILD frequency_ID0000042
+PARENT  individuals_merge_ID0000023 CHILD frequency_ID0000044
+PARENT  individuals_merge_ID0000023 CHILD mutation_overlap_ID0000051
+PARENT  individuals_merge_ID0000023 CHILD mutation_overlap_ID0000039
+PARENT  individuals_merge_ID0000023 CHILD mutation_overlap_ID0000049
+PARENT  individuals_merge_ID0000023 CHILD mutation_overlap_ID0000045
+PARENT  individuals_merge_ID0000023 CHILD mutation_overlap_ID0000047
+PARENT  mutation_overlap_ID0000045 CHILD stage_out_local_condorpool_2_2
+PARENT  mutation_overlap_ID0000047 CHILD stage_out_local_condorpool_2_0
+PARENT  individuals_ID0000004 CHILD individuals_merge_ID0000011
+PARENT  individuals_ID0000005 CHILD individuals_merge_ID0000011
+PARENT  individuals_ID0000006 CHILD individuals_merge_ID0000011
+PARENT  individuals_ID0000007 CHILD individuals_merge_ID0000011
+PARENT  individuals_ID0000001 CHILD individuals_merge_ID0000011
+PARENT  individuals_ID0000002 CHILD individuals_merge_ID0000011
+PARENT  individuals_ID0000003 CHILD individuals_merge_ID0000011
+PARENT  frequency_ID0000050 CHILD stage_out_local_condorpool_2_2
+PARENT  frequency_ID0000052 CHILD stage_out_local_condorpool_2_1
+PARENT  individuals_ID0000008 CHILD individuals_merge_ID0000011
+PARENT  individuals_ID0000009 CHILD individuals_merge_ID0000011
+PARENT  mutation_overlap_ID0000031 CHILD stage_out_local_condorpool_2_1
+PARENT  mutation_overlap_ID0000033 CHILD stage_out_local_condorpool_2_1
+PARENT  mutation_overlap_ID0000039 CHILD stage_out_local_condorpool_2_0
+PARENT  mutation_overlap_ID0000035 CHILD stage_out_local_condorpool_2_2
+PARENT  individuals_merge_ID0000011 CHILD frequency_ID0000030
+PARENT  individuals_merge_ID0000011 CHILD mutation_overlap_ID0000031
+PARENT  individuals_merge_ID0000011 CHILD frequency_ID0000036
+PARENT  individuals_merge_ID0000011 CHILD frequency_ID0000026
+PARENT  individuals_merge_ID0000011 CHILD mutation_overlap_ID0000033
+PARENT  individuals_merge_ID0000011 CHILD frequency_ID0000038
+PARENT  individuals_merge_ID0000011 CHILD frequency_ID0000032
+PARENT  individuals_merge_ID0000011 CHILD frequency_ID0000034
+PARENT  individuals_merge_ID0000011 CHILD mutation_overlap_ID0000027
+PARENT  individuals_merge_ID0000011 CHILD mutation_overlap_ID0000029
+PARENT  individuals_merge_ID0000011 CHILD frequency_ID0000028
+PARENT  individuals_merge_ID0000011 CHILD mutation_overlap_ID0000035
+PARENT  individuals_merge_ID0000011 CHILD mutation_overlap_ID0000037
+PARENT  individuals_merge_ID0000011 CHILD mutation_overlap_ID0000025
+PARENT  sifting_ID0000024 CHILD frequency_ID0000050
+PARENT  sifting_ID0000024 CHILD frequency_ID0000040
+PARENT  sifting_ID0000024 CHILD frequency_ID0000052
+PARENT  sifting_ID0000024 CHILD frequency_ID0000046
+PARENT  sifting_ID0000024 CHILD mutation_overlap_ID0000041
+PARENT  sifting_ID0000024 CHILD frequency_ID0000048
+PARENT  sifting_ID0000024 CHILD mutation_overlap_ID0000043
+PARENT  sifting_ID0000024 CHILD frequency_ID0000042
+PARENT  sifting_ID0000024 CHILD frequency_ID0000044
+PARENT  sifting_ID0000024 CHILD mutation_overlap_ID0000051
+PARENT  sifting_ID0000024 CHILD mutation_overlap_ID0000039
+PARENT  sifting_ID0000024 CHILD mutation_overlap_ID0000049
+PARENT  sifting_ID0000024 CHILD mutation_overlap_ID0000045
+PARENT  sifting_ID0000024 CHILD mutation_overlap_ID0000047
+PARENT  mutation_overlap_ID0000037 CHILD stage_out_local_condorpool_2_0
+PARENT  individuals_ID0000015 CHILD individuals_merge_ID0000023
+PARENT  individuals_ID0000016 CHILD individuals_merge_ID0000023
+PARENT  individuals_ID0000017 CHILD individuals_merge_ID0000023
+PARENT  individuals_ID0000018 CHILD individuals_merge_ID0000023
+PARENT  stage_out_local_condorpool_2_0 CHILD cleanup_1000genome-20200406T033822Z_0_condorpool
+PARENT  stage_out_local_condorpool_2_1 CHILD cleanup_1000genome-20200406T033822Z_0_condorpool
+PARENT  stage_out_local_condorpool_2_2 CHILD cleanup_1000genome-20200406T033822Z_0_condorpool
+PARENT  individuals_ID0000013 CHILD individuals_merge_ID0000023
+PARENT  individuals_ID0000014 CHILD individuals_merge_ID0000023
+PARENT  individuals_ID0000019 CHILD individuals_merge_ID0000023
+PARENT  frequency_ID0000026 CHILD stage_out_local_condorpool_2_0
+PARENT  mutation_overlap_ID0000027 CHILD stage_out_local_condorpool_2_2
+PARENT  individuals_ID0000010 CHILD individuals_merge_ID0000011
+PARENT  mutation_overlap_ID0000029 CHILD stage_out_local_condorpool_2_0
+PARENT  frequency_ID0000028 CHILD stage_out_local_condorpool_2_1
+PARENT  mutation_overlap_ID0000025 CHILD stage_out_local_condorpool_2_1
+PARENT  individuals_ID0000022 CHILD individuals_merge_ID0000023
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD individuals_ID0000004
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD individuals_ID0000015
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD individuals_ID0000005
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD individuals_ID0000016
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD individuals_ID0000006
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD individuals_ID0000017
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD individuals_ID0000007
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD individuals_ID0000018
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD individuals_ID0000022
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD individuals_ID0000001
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD individuals_ID0000002
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD individuals_ID0000013
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD individuals_ID0000003
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD individuals_ID0000014
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD individuals_ID0000008
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD individuals_ID0000019
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD individuals_ID0000009
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD individuals_ID0000020
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD individuals_ID0000010
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD individuals_ID0000021
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD sifting_ID0000012
+PARENT  create_dir_1000genome-20200406T033822Z_0_condorpool CHILD sifting_ID0000024
+PARENT  frequency_ID0000030 CHILD stage_out_local_condorpool_2_0
+PARENT  frequency_ID0000036 CHILD stage_out_local_condorpool_2_2
+PARENT  frequency_ID0000038 CHILD stage_out_local_condorpool_2_2
+PARENT  frequency_ID0000032 CHILD stage_out_local_condorpool_2_0
+PARENT  mutation_overlap_ID0000051 CHILD stage_out_local_condorpool_2_2
+PARENT  frequency_ID0000034 CHILD stage_out_local_condorpool_2_1
+PARENT  individuals_ID0000020 CHILD individuals_merge_ID0000023
+PARENT  individuals_ID0000021 CHILD individuals_merge_ID0000023
+######################################################################
+# End of DAG
+######################################################################

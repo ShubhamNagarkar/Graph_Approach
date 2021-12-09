@@ -1,0 +1,64 @@
+######################################################################
+# PEGASUS WMS GENERATED DAG FILE
+# DAG casa_wind_wf-20200817T051428Z
+# Index = 0, Count = 1
+######################################################################
+MAXJOBS cleanup 4
+MAXJOBS registration 1
+MAXJOBS stageout 10
+MAXJOBS stagein 10
+
+JOB create_dir_casa_wind_wf-20200817T051428Z_0_condorpool 00/00/create_dir_casa_wind_wf-20200817T051428Z_0_condorpool.sub
+SCRIPT POST create_dir_casa_wind_wf-20200817T051428Z_0_condorpool /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/create_dir_casa_wind_wf-20200817T051428Z_0_condorpool.out
+PRIORITY create_dir_casa_wind_wf-20200817T051428Z_0_condorpool 800
+RETRY create_dir_casa_wind_wf-20200817T051428Z_0_condorpool 1
+VARS create_dir_casa_wind_wf-20200817T051428Z_0_condorpool +DAGNodeRetry="$(RETRY)"
+
+JOB merge_gunzip_PID1_ID2 00/00/merge_gunzip_PID1_ID2.sub
+SCRIPT POST merge_gunzip_PID1_ID2 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/merge_gunzip_PID1_ID2.out
+PRIORITY merge_gunzip_PID1_ID2 10
+RETRY merge_gunzip_PID1_ID2 1
+VARS merge_gunzip_PID1_ID2 +DAGNodeRetry="$(RETRY)"
+
+JOB merge_gunzip_PID1_ID1 00/00/merge_gunzip_PID1_ID1.sub
+SCRIPT POST merge_gunzip_PID1_ID1 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/merge_gunzip_PID1_ID1.out
+PRIORITY merge_gunzip_PID1_ID1 10
+RETRY merge_gunzip_PID1_ID1 1
+VARS merge_gunzip_PID1_ID1 +DAGNodeRetry="$(RETRY)"
+
+JOB merge_gunzip_PID1_ID3 00/00/merge_gunzip_PID1_ID3.sub
+SCRIPT POST merge_gunzip_PID1_ID3 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/merge_gunzip_PID1_ID3.out
+PRIORITY merge_gunzip_PID1_ID3 10
+RETRY merge_gunzip_PID1_ID3 1
+VARS merge_gunzip_PID1_ID3 +DAGNodeRetry="$(RETRY)"
+
+JOB merge_casa_job 00/00/merge_casa_job.sub
+SCRIPT POST merge_casa_job /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/merge_casa_job.out
+PRIORITY merge_casa_job 20
+RETRY merge_casa_job 1
+VARS merge_casa_job +DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_condorpool_1_0 00/00/stage_out_local_condorpool_1_0.sub
+SCRIPT POST stage_out_local_condorpool_1_0 /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/stage_out_local_condorpool_1_0.out
+PRIORITY stage_out_local_condorpool_1_0 900
+RETRY stage_out_local_condorpool_1_0 1
+CATEGORY stage_out_local_condorpool_1_0 stageout
+VARS stage_out_local_condorpool_1_0 +DAGNodeRetry="$(RETRY)"
+
+JOB cleanup_casa_wind_wf-20200817T051428Z_0_condorpool 00/00/cleanup_casa_wind_wf-20200817T051428Z_0_condorpool.sub
+SCRIPT POST cleanup_casa_wind_wf-20200817T051428Z_0_condorpool /home/panorama/pegasus-4.9.3panorama/bin/pegasus-exitcode  -l casa_wind_wf-20200817T051428Z-0.exitcode.log -M casa_wind_wf-20200817T051428Z-0.cache.meta -N   .//00/00/cleanup_casa_wind_wf-20200817T051428Z_0_condorpool.out
+PRIORITY cleanup_casa_wind_wf-20200817T051428Z_0_condorpool 1000
+RETRY cleanup_casa_wind_wf-20200817T051428Z_0_condorpool 1
+VARS cleanup_casa_wind_wf-20200817T051428Z_0_condorpool +DAGNodeRetry="$(RETRY)"
+
+PARENT  merge_casa_job CHILD stage_out_local_condorpool_1_0
+PARENT  stage_out_local_condorpool_1_0 CHILD cleanup_casa_wind_wf-20200817T051428Z_0_condorpool
+PARENT  create_dir_casa_wind_wf-20200817T051428Z_0_condorpool CHILD merge_gunzip_PID1_ID2
+PARENT  create_dir_casa_wind_wf-20200817T051428Z_0_condorpool CHILD merge_gunzip_PID1_ID1
+PARENT  create_dir_casa_wind_wf-20200817T051428Z_0_condorpool CHILD merge_gunzip_PID1_ID3
+PARENT  merge_gunzip_PID1_ID2 CHILD merge_casa_job
+PARENT  merge_gunzip_PID1_ID1 CHILD merge_casa_job
+PARENT  merge_gunzip_PID1_ID3 CHILD merge_casa_job
+######################################################################
+# End of DAG
+######################################################################
